@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>ToDos: User Home</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+      crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/reset.css">
+   <link rel="stylesheet" href="../css/home_layout_large.css">
+</head>
+
+<body>
+   <!--============================ Header ============================
+   ===================================================================-->
+   <header>
+      <ul>
+         <div>
+            <a href="#" class="gap">ToDos</a>
+         </div>
+         <li>
+            <div id="task_modal">
+               <i class="fas fa-plus"></i>
+               <span class="gap">Add Task</span>
+            </div>
+         </li>
+         <li>Rakib</li>
+         <li>
+            <i class="fas fa-cog"></i>
+         </li>
+      </ul>
+   </header>
+
+   <!--============================ Main ============================
+   ===================================================================-->
+   <div id="main_body">
+      <div id="menu">
+
+         <div>
+            <ul>
+               <li>
+                  <i class="far fa-calendar gap"></i>
+                  <span class="gap bold">Today</span>
+               </li>
+               <li>
+                  <i class="far fa-calendar-alt gap"></i>
+                  <span class="gap bold">Next 7 Days</span>
+               </li>
+            </ul>
+         </div>
+
+         <div id="project">
+            <div id="project_head">
+               <i class="fas fa-chevron-circle-down gap"></i>
+               <!-- fa-chevron-circle-up -->
+               <span class="gap bold">Projects</span>
+               <i class="fas fa-plus gap_right" style="float: right;"></i>
+            </div>
+            <ul>
+               <li>
+                  <span class="big_dot" style="background-color: brown;"></span>
+                  <span class="gap">Personal</span>
+                  <i class="fas fa-times gap_right project_close" style="float: right;"></i>
+               </li>
+               <li>
+                  <span class="big_dot" style="background-color: cornflowerblue;"></span>
+                  <span class="gap">Shopping</span>
+                  <i class="fas fa-times gap_right project_close" style="float: right;"></i>
+               </li>
+               <li>
+                  <span class="big_dot" style="background-color: blueviolet;"></span>
+                  <span class="gap">Work</span>
+                  <i class="fas fa-times gap_right project_close" style="float: right;"></i>
+               </li>
+               <li>
+                  <span class="big_dot" style="background-color: aqua;"></span>
+                  <span class="gap">Home</span>
+                  <i class="fas fa-times gap_right project_close" style="float: right;"></i>
+               </li>
+            </ul>
+            <div></div>
+         </div>
+
+         <div>
+            <ul>
+               <li>
+                  <i class="fas fa-list gap"></i>
+                  <span class="gap bold">Completed Task</span>
+               </li>
+               <li>
+                  <i class="far fa-list-alt gap"></i>
+                  <span class="gap bold">Archive Task</span>
+               </li>
+            </ul>
+         </div>
+
+      </div>
+
+      <!--============================ Add Task Modal ============================
+      ===================================================================-->
+      <div id="myModal" class="modal">
+         <div class="modal-content">
+            <table>
+               <tr>
+                  <td>Add Your Task Here</td>
+                  <td>
+                     <span class="close">&times;</span>
+                  </td>
+               </tr>
+            </table>
+            <form action="" method="post">
+               <input type="text" name="taskName" id="taskName" autofocus maxlength="40" size="40" placeholder="e.g. Buy some fruits">
+               <input type="date" name="taskDate" id="taskDate">
+               <select name="selectProject" id="selectProject">
+                  <option value="Personal">Personal</option>
+                  <option value="Shopping">Shopping</option>
+                  <option value="Work">Work</option>
+                  <option value="Home">Home</option>
+               </select>
+               <button type="submit">Add Task</button>
+            </form>
+         </div>
+      </div>
+
+      <div id="task_container">
+
+      </div>
+
+   </div>
+   <script src="../js/home.js"></script>
+</body>
+
+</html>
