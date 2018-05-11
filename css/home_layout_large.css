@@ -108,7 +108,8 @@ header ul li:nth-of-type(3) {
 
 #menu ul li:hover,
 #project_head:hover {
-   background: rgb(211, 211, 176);
+   /* background: rgb(211, 211, 176); */
+   background: #ecebeb;
    cursor: pointer;
 }
 
@@ -138,7 +139,8 @@ header ul li:nth-of-type(3) {
 }
 
 #project ul li:hover {
-   background: #DEDECD;
+   /* background: #DEDECD; */
+   background: #f7f7f7;
 }
 
 .big_dot {
@@ -195,7 +197,7 @@ header ul li:nth-of-type(3) {
    padding: 20px;
    border: 1px solid #888;
    border-radius: 4px;
-   width: 40%;
+   width: 550px;
    /* Could be more or less, depending on screen size */
    /* box-sizing: border-box; */
    color: #333;
@@ -214,7 +216,7 @@ header ul li:nth-of-type(3) {
    font-weight: bold;
 }
 
-.close:hover{
+.close:hover {
    color: black;
    text-decoration: none;
    cursor: pointer;
@@ -231,7 +233,7 @@ header ul li:nth-of-type(3) {
 
 #myModal form input[type=date] {
    padding: 8px 0px 8px 5px;
-   border: 0px solid #ccc;
+   border: 1px solid #fff;
    margin-left: 20px;
    transition: border .2s;
    font-size: 1.1em;
@@ -242,10 +244,12 @@ header ul li:nth-of-type(3) {
    cursor: pointer;
 }
 
-#myModal form button {
+#myModal form button,
+#warningModal #warningButtonDiscard {
    background-color: #e44232;
    color: white;
    font-size: .9em;
+   font-weight: bold;
    padding: 10px 15px;
    border: none;
    border-radius: 4px;
@@ -253,16 +257,57 @@ header ul li:nth-of-type(3) {
    transition: all .2s;
 }
 
-#myModal form button:hover {
-   background-color: #45a049;
+#myModal form button:hover,
+#warningModal #warningButtonDiscard:hover {
+   background-color: #f71904;
+   box-shadow: 0px 5px 15px 0px #ccc;
 }
 
 #myModal form select {
    float: right;
-   margin-right: 60px;
+   margin-right: 77px;
    border: none;
    padding: 10px 10px;
    border-radius: 4px;
    cursor: pointer;
    font-size: .9em;
+}
+
+/*-----------------------------------------------------------------------
+* Warning Modal
+*------------------------------------------------------------------------*/
+
+.warningModal-content {
+   background-color: #fefefe;
+   margin: 4% auto;
+   padding: 25px 40px;
+   border: 1px solid #888;
+   border-radius: 4px;
+   width: 350px;
+   height: 145px;
+   box-sizing: border-box;
+   /* Could be more or less, depending on screen size */
+   color: #333;
+}
+
+#warningButton {
+   margin: 20px auto 0px auto;
+   width: 80%;
+}
+
+#warningButtonDiscard {
+   width: 55px;
+   float: left;
+   text-align: center;
+   margin-left: 10px
+}
+
+#warningButtonCancel {
+   margin: 8px 20px 0px 0px;
+   float: right;
+}
+
+#warningButtonCancel:hover {
+   text-decoration: underline;
+   cursor: pointer;
 }
