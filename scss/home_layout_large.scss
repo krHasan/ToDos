@@ -3,13 +3,15 @@ Tahoma,
 Geneva,
 Verdana,
 sans-serif;
-$bg-offWhite: #f7f7f7;
-$bg-red: #e44232;
 $color-white: #fff;
+$bg-offWhite: #f7f7f7;
+$color-ccc: #ccc;
+$bg-red: #e44232;
 $color-grey: #333;
+$color-border:  #888;
 %menu-pad-color {
    padding: 15px 10px;
-   color: #333;
+   color: $color-grey;
 }
 
 %menu-hover {
@@ -19,12 +21,12 @@ $color-grey: #333;
 
 %modal-hover {
    background-color: #f71904;
-   box-shadow: 0px 5px 15px 0px #ccc;
+   box-shadow: 0px 5px 15px 0px $color-ccc;
 }
 
 %myModal-button {
-   background-color: #e44232;
-   color: white;
+   background-color: $bg-red;
+   color: $color-white;
    font-size: .9em;
    font-weight: bold;
    padding: 10px 15px;
@@ -85,7 +87,7 @@ header {
          display: inline-block;
          font-size: 1.1em;
          color: $color-white;
-         :nth-of-type(1) {
+         &:nth-of-type(1) {
             width: 59%;
             text-align: center;
             div {
@@ -94,11 +96,11 @@ header {
                cursor: pointer;
             }
          }
-         :nth-of-type(2) {
+         &:nth-of-type(2) {
             width: 25%;
             text-align: right;
          }
-         :nth-of-type(3) {
+         &:nth-of-type(3) {
             width: 4%;
             text-align: center;
             cursor: pointer;
@@ -143,7 +145,7 @@ header {
       list-style-type: none;
       li {
          @extend %menu-pad-color;
-         :hover {
+         &:hover {
             @extend %menu-hover;
          }
       }
@@ -161,7 +163,7 @@ header {
    #project_head {
       cursor: pointer;
       @extend %menu-pad-color;
-      :hover {
+      &:hover {
          @extend %menu-hover;
       }
    }
@@ -170,7 +172,7 @@ header {
       :last-child {
          padding-bottom: 20px;
       }
-      :hover {
+      &:hover {
          background: $bg-offWhite;
          i {
             opacity: 1;
@@ -215,7 +217,7 @@ header {
    margin: 4% auto;
    /* 15% from the top and centered */
    padding: 20px;
-   border: 1px solid #888;
+   border: 1px solid $color-border;
    border-radius: 4px;
    width: 550px;
    /* Could be more or less, depending on screen size */
@@ -231,25 +233,25 @@ header {
       input[type=text] {
          padding: 10px 0px 10px 5px;
          margin: 10px 0;
-         border: 1px solid #ccc;
+         border: 1px solid $color-ccc;
          border-radius: 3px;
          box-sizing: border-box;
          font-size: .9em;
       }
       input[type=date] {
          padding: 8px 0px 8px 5px;
-         border: 1px solid #fff;
+         border: 1px solid $color-white;
          margin-left: 20px;
          transition: border .2s;
          font-size: 1.1em;
-         :hover {
-            border: 1px solid #ccc;
+         &:hover {
+            border: 1px solid $color-ccc;
             cursor: pointer;
          }
       }
       button {
          @extend %myModal-button;
-         :hover {
+         &:hover {
             @extend %modal-hover;
          }
       }
@@ -272,7 +274,7 @@ header {
    float: right;
    font-size: 28px;
    font-weight: bold;
-   :hover {
+   &:hover {
       color: black;
       text-decoration: none;
       cursor: pointer;
@@ -288,13 +290,13 @@ header {
       background-color: #fefefe;
       margin: 4% auto;
       padding: 25px 40px;
-      border: 1px solid #888;
+      border: 1px solid $color-border;
       border-radius: 4px;
       width: 350px;
       height: 145px;
       box-sizing: border-box;
       /* Could be more or less, depending on screen size */
-      color: #333;
+      color: $color-grey;
    }
    #warningButton {
       margin: 20px auto 0px auto;
@@ -305,14 +307,14 @@ header {
          text-align: center;
          margin-left: 10px;
          @extend %myModal-button;
-         :hover {
+         &:hover {
             @extend %modal-hover;
          }
       }
       #warningButtonCancel {
          margin: 8px 20px 0px 0px;
          float: right;
-         :hover {
+         &:hover {
             text-decoration: underline;
             cursor: pointer;
          }
@@ -333,7 +335,7 @@ header {
 }
 
 #task_container {
-   background: #fff;
+   background: $color-white;
    margin: 30px 25px;
 }
 
@@ -342,7 +344,7 @@ header {
 }
 
 .date {
-   color: #888;
+   color: $color-border;
 }
 
 .task {

@@ -2,17 +2,17 @@
   padding: 15px 10px;
   color: #333; }
 
-#menu ul li :hover, #project #project_head :hover {
+#menu ul li:hover, #project #project_head:hover {
   background: #ecebeb;
   cursor: pointer; }
 
-#myModal form button :hover, #warningModal #warningButton #warningButtonDiscard :hover {
+#myModal form button:hover, #warningModal #warningButton #warningButtonDiscard:hover {
   background-color: #f71904;
   box-shadow: 0px 5px 15px 0px #ccc; }
 
 #myModal form button, #warningModal #warningButton #warningButtonDiscard {
   background-color: #e44232;
-  color: white;
+  color: #fff;
   font-size: .9em;
   font-weight: bold;
   padding: 10px 15px;
@@ -65,17 +65,17 @@ header {
       display: inline-block;
       font-size: 1.1em;
       color: #fff; }
-      header ul li :nth-of-type(1) {
+      header ul li:nth-of-type(1) {
         width: 59%;
         text-align: center; }
-        header ul li :nth-of-type(1) div {
+        header ul li:nth-of-type(1) div {
           width: 20%;
           margin: auto;
           cursor: pointer; }
-      header ul li :nth-of-type(2) {
+      header ul li:nth-of-type(2) {
         width: 25%;
         text-align: right; }
-      header ul li :nth-of-type(3) {
+      header ul li:nth-of-type(3) {
         width: 4%;
         text-align: center;
         cursor: pointer; }
@@ -123,9 +123,9 @@ header {
     padding: 8px 0px 8px 44px; }
     #project ul li :last-child {
       padding-bottom: 20px; }
-    #project ul li :hover {
+    #project ul li:hover {
       background: #f7f7f7; }
-      #project ul li :hover i {
+      #project ul li:hover i {
         opacity: 1; }
 
 .project_close {
@@ -182,7 +182,7 @@ header {
   margin-left: 20px;
   transition: border .2s;
   font-size: 1.1em; }
-  #myModal form input[type=date] :hover {
+  #myModal form input[type=date]:hover {
     border: 1px solid #ccc;
     cursor: pointer; }
 #myModal form select {
@@ -200,7 +200,7 @@ header {
   float: right;
   font-size: 28px;
   font-weight: bold; }
-  .close :hover {
+  .close:hover {
     color: black;
     text-decoration: none;
     cursor: pointer; }
@@ -230,7 +230,7 @@ header {
   #warningModal #warningButton #warningButtonCancel {
     margin: 8px 20px 0px 0px;
     float: right; }
-    #warningModal #warningButton #warningButtonCancel :hover {
+    #warningModal #warningButton #warningButtonCancel:hover {
       text-decoration: underline;
       cursor: pointer; }
 
