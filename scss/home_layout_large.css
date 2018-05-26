@@ -1,0 +1,260 @@
+#menu ul li, #project #project_head {
+  padding: 15px 10px;
+  color: #333; }
+
+#menu ul li :hover, #project #project_head :hover {
+  background: #ecebeb;
+  cursor: pointer; }
+
+#myModal form button :hover, #warningModal #warningButton #warningButtonDiscard :hover {
+  background-color: #f71904;
+  box-shadow: 0px 5px 15px 0px #ccc; }
+
+#myModal form button, #warningModal #warningButton #warningButtonDiscard {
+  background-color: #e44232;
+  color: white;
+  font-size: .9em;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .2s; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #f7f7f7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.gap {
+  margin-left: 7px; }
+
+.gap_right {
+  margin-right: 8px; }
+
+.bold {
+  font-weight: bold; }
+
+.big_dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block; }
+
+/*-----------------------------------------------------------------------
+* Header
+*------------------------------------------------------------------------*/
+header {
+  background: #e44232;
+  position: sticky;
+  top: 0px; }
+  header ul {
+    width: 900px;
+    margin: auto;
+    list-style-type: none; }
+    header ul li {
+      padding: 10px 0px 12px 0px;
+      margin: 0px;
+      display: inline-block;
+      font-size: 1.1em;
+      color: #fff; }
+      header ul li :nth-of-type(1) {
+        width: 59%;
+        text-align: center; }
+        header ul li :nth-of-type(1) div {
+          width: 20%;
+          margin: auto;
+          cursor: pointer; }
+      header ul li :nth-of-type(2) {
+        width: 25%;
+        text-align: right; }
+      header ul li :nth-of-type(3) {
+        width: 4%;
+        text-align: center;
+        cursor: pointer; }
+  header a {
+    text-decoration: none;
+    color: #fff; }
+  header ul > div {
+    width: 10%;
+    font-size: 1.8em;
+    font-weight: bolder;
+    float: left;
+    padding-top: 4px; }
+
+/*-----------------------------------------------------------------------
+* Main
+*------------------------------------------------------------------------*/
+#main_body {
+  width: 900px;
+  height: 90vh;
+  background: #fff;
+  margin: auto; }
+
+/*-----------------------------------------------------------------------
+* Menu
+*------------------------------------------------------------------------*/
+#menu {
+  width: 30%;
+  float: left;
+  height: inherit;
+  /* background: #DEDECD; */
+  background: #f7f7f7; }
+  #menu ul {
+    list-style-type: none; }
+  #menu div:first-child {
+    padding-top: 30px; }
+
+#project {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+  #project #project_head {
+    cursor: pointer; }
+  #project ul li {
+    padding: 8px 0px 8px 44px; }
+    #project ul li :last-child {
+      padding-bottom: 20px; }
+    #project ul li :hover {
+      background: #f7f7f7; }
+      #project ul li :hover i {
+        opacity: 1; }
+
+.project_close {
+  opacity: 0; }
+
+/*-----------------------------------------------------------------------
+* Add Task Modal
+*------------------------------------------------------------------------*/
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 4% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  width: 550px;
+  /* Could be more or less, depending on screen size */
+  /* box-sizing: border-box; */
+  color: #333; }
+
+#myModal table {
+  width: 100%; }
+#myModal form input[type=text] {
+  padding: 10px 0px 10px 5px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: .9em; }
+#myModal form input[type=date] {
+  padding: 8px 0px 8px 5px;
+  border: 1px solid #fff;
+  margin-left: 20px;
+  transition: border .2s;
+  font-size: 1.1em; }
+  #myModal form input[type=date] :hover {
+    border: 1px solid #ccc;
+    cursor: pointer; }
+#myModal form select {
+  float: right;
+  margin-right: 77px;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: .9em; }
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+  .close :hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer; }
+
+/*-----------------------------------------------------------------------
+* Warning Modal
+*------------------------------------------------------------------------*/
+#warningModal #warningModal-content {
+  background-color: #fefefe;
+  margin: 4% auto;
+  padding: 25px 40px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  width: 350px;
+  height: 145px;
+  box-sizing: border-box;
+  /* Could be more or less, depending on screen size */
+  color: #333; }
+#warningModal #warningButton {
+  margin: 20px auto 0px auto;
+  width: 80%; }
+  #warningModal #warningButton #warningButtonDiscard {
+    width: 55px;
+    float: left;
+    text-align: center;
+    margin-left: 10px; }
+  #warningModal #warningButton #warningButtonCancel {
+    margin: 8px 20px 0px 0px;
+    float: right; }
+    #warningModal #warningButton #warningButtonCancel :hover {
+      text-decoration: underline;
+      cursor: pointer; }
+
+/*-----------------------------------------------------------------------
+* Task Container
+*------------------------------------------------------------------------*/
+#container {
+  width: 70%;
+  float: left;
+  box-sizing: border-box;
+  /* background: #e44232; */
+  color: #585353; }
+
+#task_container {
+  background: #fff;
+  margin: 30px 25px; }
+
+.today {
+  font-size: 1.3em; }
+
+.date {
+  color: #888; }
+
+.task {
+  margin-top: 20px; }
+
+/*# sourceMappingURL=home_layout_large.css.map */

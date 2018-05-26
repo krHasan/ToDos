@@ -106,3 +106,4 @@ function createProjects(projectArray, colorArray) {
       projectColorArray++;
    });
 }
+

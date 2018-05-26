@@ -9,7 +9,8 @@
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
       crossorigin="anonymous">
    <link rel="stylesheet" href="../css/reset.css">
-   <link rel="stylesheet" href="../css/home_layout_large.css">
+   <!-- <link rel="stylesheet" href="../css/home_layout_large.css"> -->
+   <link rel="stylesheet" href="../scss/home_layout_large.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
    <header>
       <ul>
          <div>
-            <a href="#" class="gap">ToDos</a>
+            <a href="home.html" class="gap">ToDos</a>
          </div>
          <li>
             <div id="task_modal">
@@ -35,7 +36,7 @@
 
    <!--============================ Main ================================
    ===================================================================-->
-   <div id="main_body">
+   <div id="main_body" class="clearfix">
 
       <div id="menu">
 
@@ -99,6 +100,15 @@
 
       </div>
 
+
+      <!--============================ Task Container ============================
+            =========================================================================-->
+      <div id="container">
+         <!-- <i class="fas fa-check-circle"></i>
+         <i class="far fa-check-circle"></i>
+         <i class="far fa-circle"></i> -->
+      </div>
+
       <!--============================ Add Task Modal ============================
       =========================================================================-->
       <div id="myModal" class="modal">
@@ -131,17 +141,11 @@
                <i class="fas fa-exclamation-triangle gap_right" style="float: left; height: 30px; margin-top: 5px"></i>
                <div style="line-height: 1.4em">Are you sure you want to discard your current task?</div>
             </div>
-            <div id="warningButton">
+            <div id="warningButton" class="clearfix">
                <div id="warningButtonDiscard">Discard</div>
                <div id="warningButtonCancel">Cancel</div>
             </div>
          </div>
-      </div>
-
-      <!--============================ Task Container ============================
-      =========================================================================-->
-      <div id="task_container">
-
       </div>
 
    </div>
