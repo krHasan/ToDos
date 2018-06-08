@@ -4,7 +4,7 @@
   "description": "A Task Manager",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./html/home.html",
+    "start": "parcel ./index.html",
     "build": "parcel build --public-url ./ ./html/home.html"
   },
   "repository": {

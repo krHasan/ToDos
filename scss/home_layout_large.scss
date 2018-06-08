@@ -8,7 +8,7 @@ $bg-offWhite: #f7f7f7;
 $color-ccc: #ccc;
 $bg-red: #e44232;
 $color-grey: #333;
-$color-border:  #888;
+$color-border: #888;
 %menu-pad-color {
    padding: 15px 10px;
    color: $color-grey;
@@ -169,7 +169,7 @@ header {
    }
    ul li {
       padding: 8px 0px 8px 44px;
-      :last-child {
+      &:last-child {
          padding-bottom: 20px;
       }
       &:hover {
@@ -204,7 +204,7 @@ header {
    /* Full height */
    overflow: auto;
    /* Enable scroll if needed */
-   background-color: rgb(0, 0, 0);
+   // background-color: rgb(0, 0, 0);
    /* Fallback color */
    background-color: rgba(0, 0, 0, 0.4);
    /* Black w/ opacity */
@@ -285,19 +285,17 @@ header {
 * Warning Modal
 *------------------------------------------------------------------------*/
 
-#warningModal {
-   #warningModal-content {
-      background-color: #fefefe;
-      margin: 4% auto;
-      padding: 25px 40px;
-      border: 1px solid $color-border;
-      border-radius: 4px;
-      width: 350px;
-      height: 145px;
-      box-sizing: border-box;
-      /* Could be more or less, depending on screen size */
-      color: $color-grey;
-   }
+.warningModal-content {
+   background-color: #fefefe;
+   margin: 4% auto;
+   padding: 25px 40px;
+   border: 1px solid $color-border;
+   border-radius: 4px;
+   width: 350px;
+   height: 145px;
+   box-sizing: border-box;
+   /* Could be more or less, depending on screen size */
+   color: $color-grey;
    #warningButton {
       margin: 20px auto 0px auto;
       width: 80%;

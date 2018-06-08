@@ -1,0 +1,40 @@
+@font-face {
+   font-family: Roboto;
+   src: url(../resources/Roboto-Light.ttf);
+}
+
+body {
+   background-image:url(../resources/pexels-photo-1029577.jpeg);
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+   background-blend-mode: screen;
+   font-family: Roboto;
+}
+
+#demo {
+   height: 350px;
+   width: 600px;
+   border-radius: 10px;
+   position: absolute;
+   top: 20%;
+   left: 10%;
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+#signIn {
+   height: 350px;
+   width: 300px;
+   border-radius: 10px;
+   position: absolute;
+   top: 20%;
+   right: 7%;
+   /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+#signIn p {
+   text-align: center;
+   margin: 50px 0px 20px;
+   color: #eee;
+   font-size: 1.3rem;
+   font-weight: 500;
+}

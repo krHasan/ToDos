@@ -2,66 +2,65 @@
 <html lang="en">
 
 <head>
-   <title>ToDos: User Home</title>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
-      crossorigin="anonymous">
-   <link rel="stylesheet" href="../css/reset.css">
-   <!-- <link rel="stylesheet" href="../css/home_layout_large.css"> -->
-   <link rel="stylesheet" href="../scss/home_layout_large.css">
+      <title>ToDos: User Home</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+            crossorigin="anonymous">
+      <link rel="stylesheet" href="../scss/reset.css">
+      <link rel="stylesheet" href="../scss/home_layout_large.min.css">
 </head>
 
 <body>
-   <!--============================ Header ============================
+      <!--============================ Header ============================
    ===================================================================-->
-   <header>
-      <ul>
-         <div>
-            <a href="home.html" class="gap">ToDos</a>
-         </div>
-         <li>
-            <div id="task_modal">
-               <i class="fas fa-plus"></i>
-               <span class="gap">Add Task</span>
-            </div>
-         </li>
-         <li>Rakib</li>
-         <li>
-            <i class="fas fa-cog"></i>
-         </li>
-      </ul>
-   </header>
-
-   <!--============================ Main ================================
-   ===================================================================-->
-   <div id="main_body" class="clearfix">
-
-      <div id="menu">
-
-         <div>
+      <header>
             <ul>
-               <li>
-                  <i class="far fa-calendar gap"></i>
-                  <span class="gap bold">Today</span>
-               </li>
-               <li>
-                  <i class="far fa-calendar-alt gap"></i>
-                  <span class="gap bold">Next 7 Days</span>
-               </li>
+                  <div>
+                        <a href="home.html" class="gap">ToDos</a>
+                  </div>
+                  <li>
+                        <div id="task_modal">
+                              <i class="fas fa-plus"></i>
+                              <span class="gap">Add Task</span>
+                        </div>
+                  </li>
+                  <li>Rakib</li>
+                  <li>
+                        <i class="fas fa-cog"></i>
+                  </li>
             </ul>
-         </div>
+      </header>
 
-         <div id="project">
-            <div id="project_head">
-               <i class="fas fa-chevron-circle-down gap"></i>
-               <!-- fa-chevron-circle-up -->
-               <span class="gap bold">Projects</span>
-               <i class="fas fa-plus gap_right" style="float: right;"></i>
-            </div>
-            <ul>
-               <!-- <li>
+      <!--============================ Main ================================
+   ===================================================================-->
+      <div id="main_body" class="clearfix">
+
+            <div id="menu">
+
+                  <div>
+                        <ul>
+                              <li>
+                                    <i class="far fa-calendar gap"></i>
+                                    <span class="gap bold">Today</span>
+                              </li>
+                              <li>
+                                    <i class="far fa-calendar-alt gap"></i>
+                                    <span class="gap bold">Next 7 Days</span>
+                              </li>
+                        </ul>
+                  </div>
+
+                  <div id="project">
+                        <div id="project_head">
+                              <i class="fas fa-chevron-circle-down gap"></i>
+                              <!-- fa-chevron-circle-up -->
+                              <span class="gap bold">Projects</span>
+                              <i class="fas fa-plus gap_right" style="float: right;"></i>
+                        </div>
+                        <ul>
+                              <!-- <li>
                   <span class="big_dot" style="background-color: brown;"></span>
                   <span class="gap">Personal</span>
                   <i class="fas fa-times gap_right project_close" style="float: right;"></i>
@@ -81,75 +80,75 @@
                   <span class="gap">Home</span>
                   <i class="fas fa-times gap_right project_close" style="float: right;"></i>
                </li> -->
-            </ul>
-            <div></div>
-         </div>
+                        </ul>
+                        <div></div>
+                  </div>
 
-         <div>
-            <ul>
-               <li>
-                  <i class="fas fa-list gap"></i>
-                  <span class="gap bold">Completed Task</span>
-               </li>
-               <li>
-                  <i class="far fa-list-alt gap"></i>
-                  <span class="gap bold">Archive Task</span>
-               </li>
-            </ul>
-         </div>
+                  <div>
+                        <ul>
+                              <li>
+                                    <i class="fas fa-list gap"></i>
+                                    <span class="gap bold">Completed Task</span>
+                              </li>
+                              <li>
+                                    <i class="far fa-list-alt gap"></i>
+                                    <span class="gap bold">Archive Task</span>
+                              </li>
+                        </ul>
+                  </div>
 
-      </div>
+            </div>
 
 
-      <!--============================ Task Container ============================
+            <!--============================ Task Container ============================
             =========================================================================-->
-      <div id="container">
-         <!-- <i class="fas fa-check-circle"></i>
+            <div id="container">
+                  <!-- <i class="fas fa-check-circle"></i>
          <i class="far fa-check-circle"></i>
          <i class="far fa-circle"></i> -->
-      </div>
+            </div>
 
-      <!--============================ Add Task Modal ============================
+            <!--============================ Add Task Modal ============================
       =========================================================================-->
-      <div id="myModal" class="modal">
-         <div class="modal-content">
-            <table>
-               <tr>
-                  <td>Add Your Task Here</td>
-                  <td>
-                     <span class="close">&times;</span>
-                  </td>
-               </tr>
-            </table>
-            <form action="" method="post">
-               <input type="text" name="taskName" id="taskName" autofocus maxlength="40" size="40" placeholder="e.g. Buy some fruits">
-               <input type="date" name="taskDate" id="taskDate">
-               <select name="selectProject" id="selectProject">
-                  <option value="Personal">Personal</option>
-                  <option value="Shopping">Shopping</option>
-                  <option value="Work">Work</option>
-                  <option value="Home">Home</option>
-               </select>
-               <button type="submit">Add Task</button>
-            </form>
-         </div>
-      </div>
-
-      <div id="warningModal" class="modal">
-         <div class="warningModal-content">
-            <div>
-               <i class="fas fa-exclamation-triangle gap_right" style="float: left; height: 30px; margin-top: 5px"></i>
-               <div style="line-height: 1.4em">Are you sure you want to discard your current task?</div>
+            <div id="myModal" class="modal">
+                  <div class="modal-content">
+                        <table>
+                              <tr>
+                                    <td>Add Your Task Here</td>
+                                    <td>
+                                          <span class="close">&times;</span>
+                                    </td>
+                              </tr>
+                        </table>
+                        <form action="" method="post">
+                              <input type="text" name="taskName" id="taskName" autofocus maxlength="40" size="40" placeholder="e.g. Buy some fruits">
+                              <input type="date" name="taskDate" id="taskDate">
+                              <select name="selectProject" id="selectProject">
+                                    <option value="Personal">Personal</option>
+                                    <option value="Shopping">Shopping</option>
+                                    <option value="Work">Work</option>
+                                    <option value="Home">Home</option>
+                              </select>
+                              <button type="submit">Add Task</button>
+                        </form>
+                  </div>
             </div>
-            <div id="warningButton" class="clearfix">
-               <div id="warningButtonDiscard">Discard</div>
-               <div id="warningButtonCancel">Cancel</div>
-            </div>
-         </div>
-      </div>
 
-   </div>
-   <script src="../js/home.js"></script>
+            <div id="warningModal" class="modal">
+                  <div class="warningModal-content">
+                        <div>
+                              <i class="fas fa-exclamation-triangle gap_right" style="float: left; height: 30px; margin-top: 5px"></i>
+                              <div style="line-height: 1.4em">Are you sure you want to discard your current task?</div>
+                        </div>
+                        <div id="warningButton" class="clearfix">
+                              <div id="warningButtonDiscard">Discard</div>
+                              <div id="warningButtonCancel">Cancel</div>
+                        </div>
+                  </div>
+            </div>
+
+      </div>
+      <script src="../js/home.js"></script>
 </body>
 
 </html>

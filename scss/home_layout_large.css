@@ -6,11 +6,11 @@
   background: #ecebeb;
   cursor: pointer; }
 
-#myModal form button:hover, #warningModal #warningButton #warningButtonDiscard:hover {
+#myModal form button:hover, .warningModal-content #warningButton #warningButtonDiscard:hover {
   background-color: #f71904;
   box-shadow: 0px 5px 15px 0px #ccc; }
 
-#myModal form button, #warningModal #warningButton #warningButtonDiscard {
+#myModal form button, .warningModal-content #warningButton #warningButtonDiscard {
   background-color: #e44232;
   color: #fff;
   font-size: .9em;
@@ -121,7 +121,7 @@ header {
     cursor: pointer; }
   #project ul li {
     padding: 8px 0px 8px 44px; }
-    #project ul li :last-child {
+    #project ul li:last-child {
       padding-bottom: 20px; }
     #project ul li:hover {
       background: #f7f7f7; }
@@ -149,7 +149,6 @@ header {
   /* Full height */
   overflow: auto;
   /* Enable scroll if needed */
-  background-color: black;
   /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */ }
@@ -208,7 +207,7 @@ header {
 /*-----------------------------------------------------------------------
 * Warning Modal
 *------------------------------------------------------------------------*/
-#warningModal #warningModal-content {
+.warningModal-content {
   background-color: #fefefe;
   margin: 4% auto;
   padding: 25px 40px;
@@ -219,20 +218,20 @@ header {
   box-sizing: border-box;
   /* Could be more or less, depending on screen size */
   color: #333; }
-#warningModal #warningButton {
-  margin: 20px auto 0px auto;
-  width: 80%; }
-  #warningModal #warningButton #warningButtonDiscard {
-    width: 55px;
-    float: left;
-    text-align: center;
-    margin-left: 10px; }
-  #warningModal #warningButton #warningButtonCancel {
-    margin: 8px 20px 0px 0px;
-    float: right; }
-    #warningModal #warningButton #warningButtonCancel:hover {
-      text-decoration: underline;
-      cursor: pointer; }
+  .warningModal-content #warningButton {
+    margin: 20px auto 0px auto;
+    width: 80%; }
+    .warningModal-content #warningButton #warningButtonDiscard {
+      width: 55px;
+      float: left;
+      text-align: center;
+      margin-left: 10px; }
+    .warningModal-content #warningButton #warningButtonCancel {
+      margin: 8px 20px 0px 0px;
+      float: right; }
+      .warningModal-content #warningButton #warningButtonCancel:hover {
+        text-decoration: underline;
+        cursor: pointer; }
 
 /*-----------------------------------------------------------------------
 * Task Container
