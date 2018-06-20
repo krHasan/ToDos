@@ -1,3 +1,6 @@
+/*=========================================================================
+* Initializing Firebase
+*=========================================================================*/
 // Initialize Firebase
 var config = {
    apiKey: "AIzaSyDfC4t9fxFJZbbE1rLfk9u8waGW-Jwhl_0",
@@ -14,17 +17,49 @@ firebase.initializeApp(config);
 // };
 // firestore.settings(settings);
 
+
+/*=========================================================================
+* Authentication Methods
+*=========================================================================*/
 //google authentication
 // FirebaseUI config.
 var uiConfig = {
    signInSuccessUrl: 'home.html',
    signInOptions: [
       // Leave the lines as is for the providers you want to offer your users.
-      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      // firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      {
+         provider: firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+         scopes: [
+            'https://www.googleapis.com/auth/plus.login'
+         ],
+         customParameters: {
+            // Forces account selection even when one account
+            // is available.
+            prompt: 'select_account'
+         }
+      },
       // firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+      {
+         provider: firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+         scopes: [
+            'public_profile',
+            'email',
+            'user_likes',
+            'user_friends'
+         ],
+         customParameters: {
+            // Forces password re-entry.
+            auth_type: 'reauthenticate'
+         }
+      },
       // firebase.auth.TwitterAuthProvider.PROVIDER_ID,
       // firebase.auth.GithubAuthProvider.PROVIDER_ID,
-      firebase.auth.EmailAuthProvider.PROVIDER_ID,
+      // firebase.auth.EmailAuthProvider.PROVIDER_ID,
+      {
+         provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+         requireDisplayName: false
+      }
       // firebase.auth.PhoneAuthProvider.PROVIDER_ID
    ],
    // Terms of service url.
@@ -37,6 +72,9 @@ var ui = new firebaseui.auth.AuthUI(firebase.auth());
 ui.start('#firebaseui-auth-container', uiConfig);
 
 
+/*=========================================================================
+* Authentication State
+*=========================================================================*/
 firebase.auth().onAuthStateChanged(function (user) {
    if (user) {
       // User is signed in.
